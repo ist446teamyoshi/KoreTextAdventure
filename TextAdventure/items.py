@@ -28,22 +28,29 @@ class Weapon(Item):
     def __str__(self):
         return "{}\n=====\n{}\nValue: {}\nDamage: {}".format(self.name, self.description, self.value, self.damage)
  
-class Rock(Weapon):
+class Laser(Weapon):
     def __init__(self):
-        super().__init__(name="Rock",
-                         description="A fist-sized rock, suitable for bludgeoning.",
-                         value=0,
+        super().__init__(name="Laser",
+                         description="A laser gun. Made from Kore technology.",
+                         value=50,
                          damage=5)
  
-class Dagger(Weapon):
+class Whip(Weapon):
     def __init__(self):
-        super().__init__(name="Dagger",
-                         description="A small dagger with some rust. Somewhat more dangerous than a rock.",
+        super().__init__(name="Whip",
+                         description="A leather whip. Try not to hit yourself with it.",
                          value=10,
-                         damage=10)
-class Pillow(Weapon):
+                         damage=2)
+class Mine(Weapon):
     def __init__(self):
-        super().__init__(name="Pillow",
-                         description="A pillow super soft.",
-                         value=1,
-                         damage=1)
+        super().__init__(name="Mine",
+                         description="A mine that triggers with motion.",
+                         value=20,
+                         damage=10)
+
+class Shruiken(Weapon):
+    def __init__(self):
+        super().__init__(name="Shruiken",
+                         description="An authentic japanese shruiken. It looks pretty sharp.",
+                         value=20,
+                         damage=5)
