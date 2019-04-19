@@ -31,12 +31,12 @@ class MapTile:
         return moves
 
 
-class StartingRoom(MapTile):
+class JailCell(MapTile):
     # override the intro_text method in the superclass
     def intro_text(self):
         return """
-        You find yourself in a cave with a flickering torch on the wall.
-        You can make out four paths, each equally as dark and foreboding.
+        You find yourself in a jail cell. You were captured by the Aichtu-olgans.
+        All your team members were captured and you need to find a way out of the cell.
         """
  
     def modify_player(self, player):
@@ -94,14 +94,14 @@ class GiantSpiderRoom(EnemyRoom):
             The corpse of a dead spider rots on the ground.
             """
  
-class FindDaggerRoom(LootRoom):
+class FindLaserGunRoom(LootRoom):
     def __init__(self, x, y):
-        super().__init__(x, y, items.Dagger())
+        super().__init__(x, y, items.LaserGun())
  
     def intro_text(self):
         return """
         Your notice something shiny in the corner.
-        It's a dagger! You pick it up.
+        It's a Laser Gun! You pick it up.
         """
 
 class LeaveCaveRoom(MapTile):

@@ -28,9 +28,9 @@ class Weapon(Item):
     def __str__(self):
         return "{}\n=====\n{}\nValue: {}\nDamage: {}".format(self.name, self.description, self.value, self.damage)
  
-class Laser(Weapon):
+class LaserGun(Weapon):
     def __init__(self):
-        super().__init__(name="Laser",
+        super().__init__(name="Laser Gun",
                          description="A laser gun. Made from Kore technology.",
                          value=50,
                          damage=5)

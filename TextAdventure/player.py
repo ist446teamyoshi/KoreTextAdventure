@@ -3,7 +3,7 @@ import items, world
  
 class Player():
     def __init__(self):
-        self.inventory = [items.Gold(15), items.Pillow(), items.Rock()] #Inventory on startup
+        self.inventory = [items.Gold(15), items.Whip()] #Inventory on startup
         self.hp = 100 # Health Points
         self.location_x, self.location_y = world.starting_position  #(0, 0)
         self.victory = False #no victory on start up
