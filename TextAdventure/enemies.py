@@ -26,3 +26,11 @@ class Miller(Enemy):
 class Leon(Enemy):
     def __int__(self):
         super().__init__(name="Leon", hp=50, damage=10)
+
+class Golem(Enemy)
+    def __init__(self):
+        super().__init__(name="Golem", hp=40, damage=10)
+
+class DemonEye(Enemy)
+    def __init__(self):
+        super().__init__(name="DemonEye", hp=20, damage=20)
