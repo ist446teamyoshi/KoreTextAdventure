@@ -82,16 +82,16 @@ class EmptyCavePath(MapTile):
  
 class GiantSpiderRoom(EnemyRoom):
     def __init__(self, x, y):
-        super().__init__(x, y, enemies.GiantSpider())
+        super().__init__(x, y, enemies.Guard())
  
     def intro_text(self):
         if self.enemy.is_alive():
             return """
-            A giant spider jumps down from its web in front of you!
+            A guard spots you! He looks like the stupid one.
             """
         else:
             return """
-            The corpse of a dead spider rots on the ground.
+            A guard is lying on the floor. Too many donuts.
             """
  
 class FindLaserGunRoom(LootRoom):

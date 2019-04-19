@@ -70,7 +70,7 @@ class Shard(Special):
 class SecretBook(Special):
     def __init__(self):
         super().__init__(name="Secret Book",
-                         description="A mysterious book, I wonder what's for",
+                         description="A mysterious book, I wonder what it's for",
                          value=50,
                          charge=100)
 
