@@ -54,3 +54,23 @@ class Shruiken(Weapon):
                          description="An authentic japanese shruiken. It looks pretty sharp.",
                          value=20,
                          damage=5)
+
+class Special(Item):
+    def __init__(self, name, description, value, charge):
+        self.charge = charge
+        super().__init__(name, description, value)
+
+class Shard(Special):
+    def __init__(self):
+        super().__init__(name="Shard",
+                         description="A shard that will charge up your special",
+                         value=20,
+                         charge=20)
+
+class SecretBook(Special):
+    def __init__(self):
+        super().__init__(name="Secret Book",
+                         description="A mysterious book, I wonder what's for",
+                         value=50,
+                         charge=100)
+

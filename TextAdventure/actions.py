@@ -45,3 +45,6 @@ class Flee(Action):
         super().__init__(method=Player.flee, name="Flee", hotkey='f', tile=tile)
 
 
+class Special(Action):
+    def __init__(self, enemy):
+        super().__init__(method=Player.special, name="Special", hotkey='x', enemy=enemy)
